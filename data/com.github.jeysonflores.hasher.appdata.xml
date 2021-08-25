@@ -15,10 +15,11 @@
 		</p>
 		<ul>
 			<li>MD5</li>
+			<li>SHA1</li>
 			<li>SHA224</li>
 			<li>SHA256</li>
 			<li>SHA384</li>
-      <li>SHA512</li>
+      		<li>SHA512</li>
 		</ul>
 		<p>
 			Features Include:
@@ -27,13 +28,47 @@
 			<li>Hash files</li>
 			<li>Compare files</li>
 			<li>Verify if a file and a hash match</li>
-      <li>Dark Mode Support</li>
+      		<li>Dark Mode Support</li>
 		</ul>
 	</description>
 	<provides>
 		<binary>com.github.jeysonflores.hasher</binary>
 	</provides>
 	<releases>
+	<release version="1.0.2" date="2021-08-25">
+		<description>
+			<p>New Features:</p>
+		  <ul>
+			  <li>Translation Support</li>
+		  </ul>
+		  <p>Improvements:</p>
+		  <ul>
+			  <li>Spanish Translation</li>
+		  </ul>
+		</description>
+	</release>
+	<release version="1.0.1-7" date="2021-08-24">
+      <description>
+	  	<p>New Features:</p>
+		<ul>
+			<li>Now Hasher remembers last selected algorithm (Thanks to Vishal Rao)</li>
+		</ul>
+        <p>Improvements:</p>
+        <ul>
+			<li>Screenshots now display correctly on AppCenter (Thanks to Cassidy James)</li>
+			<li>Other code cleaning</li>
+        </ul>
+      </description>
+	</release>
+	<release version="1.0.1-4" date="2021-08-23">
+      <description>
+        <p>Improvements:</p>
+        <ul>
+			<li>Dialogs now use native portals</li>
+            <li>Flatpak's file access permissions removed</li>
+        </ul>
+      </description>
+	</release>
     <release version="1.0.1" date="2021-08-22">
       <description>
         <p>First Release</p>
@@ -45,13 +80,13 @@
 	</releases>
 	<screenshots>
 		<screenshot type="default">
-			<image>https://github.com/JeysonFlores/hasher/blob/main/data/assets/screenshots/screenshot-1.png</image>
+			<image>https://raw.githubusercontent.com/JeysonFlores/hasher/main/data/assets/screenshots/screenshot-1.png</image>
 		</screenshot>
 		<screenshot>
-			<image>https://github.com/JeysonFlores/hasher/blob/main/data/assets/screenshots/screenshot-2.png</image>
+			<image>https://raw.githubusercontent.com/JeysonFlores/hasher/main/data/assets/screenshots/screenshot-2.png</image>
 		</screenshot>
 		<screenshot>
-			<image>https://github.com/JeysonFlores/hasher/blob/main/data/assets/screenshots/screenshot-3.png</image>
+			<image>https://raw.githubusercontent.com/JeysonFlores/hasher/main/data/assets/screenshots/screenshot-3.png</image>
 		</screenshot>
 	</screenshots>
 	<developer_name>Jeyson Antonio Flores Deras</developer_name>
