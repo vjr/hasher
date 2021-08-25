@@ -11,7 +11,10 @@ finish-args:
   - '--socket=fallback-x11'
   - '--socket=wayland'
   - '--system-talk-name=org.freedesktop.Accounts'
+  - '--filesystem=host:ro'
+  - '--filesystem=home'
   - '--filesystem=~/.local/share/contractor:create'
+  - '--filesystem=~/.local/share/flatpak/app/com.github.jeysonflores.hasher/current/active/files/share/contractor:ro'
 
 modules:
   - name: hasher

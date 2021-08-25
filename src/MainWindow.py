@@ -5,6 +5,7 @@ import gi
 import HashView 
 import sys
 import locale, gettext, os
+import subprocess
 
 gi.require_version('Gtk', '3.0')
 
@@ -29,6 +30,19 @@ try:
 except FileNotFoundError:
     _ = str
 
+try:
+    print("- Creating user contractor directory...")
+    subprocess.call(['mkdir', '-p', '~/.local/share/contractor'])
+    print("- User contractor directory created")
+except Exception as e:
+    print("- User contractor directory creation failed...")
+
+try:
+    print("- Copying contractor file...")
+    subprocess.call(['cp', '~/.local/share/flatpak/app/com.github.jeysonflores.hasher/current/active/files/share/contractor/com.github.jeysonflores.hasher.contract', '~/.local/share/contractor/'])
+    print("- Contractor file copied")
+except Exception as e:
+    print("- Contractor file copy failed...")
 
 BLOCK_SIZE = 65536
 
